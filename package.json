@@ -1,7 +1,7 @@
 {
 	"name": "keeper-part-3-starting",
 	"private": true,
-	"homepage": "https://devyalchemist.github.io/keeper-app/",
+	"homepage": "https://devyalchemist.github.io/keeper-app-main/",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
