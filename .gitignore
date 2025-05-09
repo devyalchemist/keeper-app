@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*.local
+
+# Vite cache (optional but recommended)
+.vite/
+
+# VS Code settings (optional)
+.vscode/
+
+# macOS system file
+*.DS_Store
+
+# IDE settings (optional, depending on IDE)
+.idea/
