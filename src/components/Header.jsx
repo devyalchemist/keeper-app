@@ -4,9 +4,8 @@ import HighlightIcon from "@mui/icons-material/Highlight";
 function Header() {
 	return (
 		<header>
-			<h1>
-				<HighlightIcon /> Keeper
-			</h1>
+			<HighlightIcon />
+			<span>Keeper</span>
 		</header>
 	);
 }

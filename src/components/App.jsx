@@ -5,7 +5,13 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-	const [notes, setNotes] = useState([]);
+	const [notes, setNotes] = useState([
+		{ title: "hello", content: "world" },
+		{ title: "hello", content: "world" },
+		{ title: "hello", content: "world" },
+		{ title: "hello", content: "world" },
+		{ title: "hello", content: "world" },
+	]);
 
 	function addNotes(note) {
 		setNotes((prev) => {
@@ -21,21 +27,26 @@ function App() {
 		});
 	}
 	return (
-		<div>
-			<Header />
-			<CreateArea addNote={addNotes} />
-			{notes.map((e, i) => {
-				return (
-					<Note
-						key={i}
-						id={i}
-						deleteNotes={deleteNotes}
-						title={e.title}
-						content={e.content}
-					/>
-				);
-			})}
-			{/* <Note title={"default"} content="default"></Note> */}
+		<div className="app">
+			<div className="main-con">
+				<Header />
+				<CreateArea addNote={addNotes} />
+
+				<div className="note-area">
+					{notes.map((e, i) => {
+						return (
+							<Note
+								key={i}
+								id={i}
+								deleteNotes={deleteNotes}
+								title={e.title}
+								content={e.content}
+							/>
+						);
+					})}
+				</div>
+				{/* <Note title={"default"} content="default"></Note> */}
+			</div>
 			<Footer />
 		</div>
 	);
